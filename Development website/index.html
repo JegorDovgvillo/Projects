@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Your best landing</title>
+	<meta charset="utf-8">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset-style.css">
+	<link rel="stylesheet" type="text/css" href="main_style.css">
+	<link rel="stylesheet" type="text/css" href="adaptate.css">
+	<link rel="icon" href="images/favicon-32x32-min.png" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/c8c5724d4b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="width-limit">
+		<div class="header" id="main" id="top">
+			<div class="header__top">
+				<div class="header__title title">
+					<h1>наши сайты засатвляют работать ваш бизнес.</h1>
+				</div>
+				<div class="header__subtitle subtitle">
+					<p>Большинство веб&ndash;студий считают окончанием работы загрузку
+						сайта в интернет. Но почти никто не умеет делать проекты,
+						которые работают и приносят прибыль.
+					</p>
+				</div>
+			</div>
+			<div class="header__row">
+				<div class="header__column">
+					<div class="items-column__img">
+						<img
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAiCAMAAAAAh4u3AAAAAXNSR0IB2cksfwAAARRQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////rH78GQAAAFx0Uk5TABn5p/8co7CfERfMmz4UzplBAyVoidE/XYXK5ESl/vzbjeLexKB+WjlLi0liQ3V7/YE0+IYw94Aq9MXDDvaTNWleQIg4sd0sptm4ZAWQryk9ud+7yE2iz1hj4OFnZPLgAAABdElEQVQYGYXBB1LCUABF0Re9REWCInaU2MXee8OCvXd0//vwkwEnPxI8R1FOU5Oj/zRDs/6RwEioMRfDVUMOtLSAo0Zaoa0NWtVAEtqldkgqXgo8yYOUYqWhQ0YHpBWnEzIyMtCpOrqyXncP9CrQCz3dXrZLNYm+/gF3MEdgSIEhArlBd6C/LyEN56nxR0ZVNTriU5MfFsbY+MTk1HTBUYhTmJ6anBgfw9AMMKtYs8CMNAf+vGLM+zAnYwFYVF2LwIICHrCkOpYAT1WFZVjRHyuwXNCv1TVYV8Q6rK0qZGMTtmTZgs0NWbZz7MiyQ25bEbvsybLHriL2DziU5ZCDfdmOoChLEY5kO4YTWU7gWLZT8klVnJVKZ6pI5jmVrcS5jItLjMsLGeeUZLviWsqmqEplpWuuZEn73NzeYdw/PNxj3N3e4KcV9ghPz8BLRkbmBXh+gkeFFal4fVPV2ysVRYW9Ax+fCvn8AFyFlfkqK6L8TVmBH71QJlBAQ7uGAAAAAElFTkSuQmCC"
+							alt="Звезда">
+					</div>
+					<div class="items-column__numb ">
+						<p>518</p>
+					</div>
+					<div class="items-column__text ">
+						<p>оказанных услуг</p>
+					</div>
+					<div class="items-column__border">
+						<img src="images/рамка-min.png" alt="рамка">
+					</div>
+				</div>
+				<div class="header__column">
+					<div class="items-column__img">
+						<img
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAmCAMAAACbFsmhAAAAAXNSR0IB2cksfwAAAYZQTFRFAAAA////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////l9NhuQAAAIJ0Uk5TAGTf8cwv/87o3uozLmfd4uUGRViuvLikKELuD34lIe20AxhicWxtdoWAgSr8xic54QtHmaejpo8aP0xINRTSliNSFfgFtdl529faxKVAikb0aWFma7GvMEOUBIsKu+NcKXrkkbk++sDc/fYO1M/TSUQNcIy9v9CJ+f48VE5WUFWhnsz2ScwAAAFmSURBVDjLnZRVVwJhGITHGhUTFMVWFBUDBbuxu7sbu7v1n3uBu3t2fVc4PlfvxXPONzMXHyIio0yJjkEQ/kVsOFJcOFK8JlkSEgWSSCZrUgokEvVSqlWSbL+ltHR7hoo90yFJWYbE2TmClGvslSdI+QV6p7BIyuQsLnEplJakycHDaucoK3crVJS7rJJUWaXPVG0VJLexnUeQagxOrVfK5Kurb1BpbGr+fzu0tLaptLaLUkenPlOXJJUZ2/kFqdso9cBGshdAX/+AkmkwdmhYZWQ0K/jcGOAfJs3bjZMTwOQUOW0uzXAWmCM5L+zUtLAIAFjqBpZJWlYEqZdcXQMAeNdJsl1a3EdyYxPAVjJJbv9MsKMPs0uSe/79AEkeQJZwSJJHJMnjE0UKnJ6da1zAo216afJhHF/hWrlvTH+VW+AueN0rARp/Ww/IeSTJJ6ca8/nlVc/bC/BOkh8IwSf5hZCcnmn3N+2gTj0fJIj7AAAAAElFTkSuQmCC"
+							alt="список">
+					</div>
+					<div class="items-column__numb ">
+						<p>345</p>
+					</div>
+					<div class="items-column__text ">
+						<p>проектов</p>
+					</div>
+					<div class="items-column__border">
+						<img src="images/рамка-min.png" alt="рамка">
+					</div>
+				</div>
+				<div class="header__column">
+					<div class="items-column__img">
+						<img
+							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAiCAMAAAAEcluKAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAHpUExURUdwTP///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////6hLw2UAAACidFJOUwDz7P0R6w138YIe988czQYC+oG5RDQ5Abexybja6rbp5PBpgHqo5qQ74VXbKlBfHQh+nC/XzL4DS06KGJ6SNvb5vyEwTcPS4Musbnx/pfL8ZeOtE0V5+/UZDiB9MR9ZC6n0ONa852u02GqYl6B7iRR1EI94/iWr+ENIbJkVmmAmD6Od3eIJUZPEKFPAQkxvVN6QchLvsxdowYRa03Ez7goaiNix3a0AAAILSURBVBgZjcEDexxhAIXRu8nsdnZj27adNLZZ27Zt227fX9ovk02etOE5cryc3rCC6QEtqGcVVzQvGMOeAVw/caRFADMujGD5xUIAZE76fCG/QqG0Gf6E+3w+6wtBoZCvObW4Ltzjs4y3kKdwm5HfMnp45gmiW45iuKYKmJK6oEhSLKSESS8gUy3QqVkTUCZPBDWyAmGHjHOQKj2m9YGaIElGCPRLOgvRCVAoRzyUhMEjSXfglqQbjF6XFDeCkSW/alx9tHkk3W7jonTmPFGyLEvHgZq6LZYjLvoSkBRnWZYSIERHIcVt23ZAGpCbbs/JKIoAAty2bbtT4JAOsA6HtRdIOuL1eiMrYX+F1y8yB1IjvV7vwVpwlUnR0CNHAfFa0EigHPsgRkYpBEzKGIQY+Z2C3TJ2pcFOOU5AdbikJmiWXzbEykiELPkdg3YZUbSWa859kmXkQY4WJMCwpC64KcdzGJC0DUK1SCKclOSmT44PjHqkQnB7tEh5AVyVGuGJjI8wLHUCxfpHyB54qA54I2MQNurde2jQf7YDMUoko05SOsnSNzitJeohKKwKXklT8FUTcFfLGINghdIupeLSd+jWsoagfyiQcMGnHzAepuVVwngETxtIH8sgsEMricfo7eW1Gy5rZcHMy9QqPLnMadGqtgYxK0pr2IiRrDWVwKbNWls2+VqPKi3xF+HHA0i70+vgAAAAAElFTkSuQmCC"
+							alt="алмаз ">
+					</div>
+					<div class="items-column__numb ">
+						<p>218</p>
+					</div>
+					<div class="items-column__text ">
+						<p>постоянных клиентов</p>
+					</div>
+					<div class="items-column__border">
+						<img src="images/рамка-min.png" alt="рамка">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<a href="#main" class="nav__link nav__link_hover">Главная</a>
+			<a href="#We" class="nav__link nav__link_hover">О нас</a>
+			<a href="#services" class="nav__link nav__link_hover">Услуги</a>
+			<a href="#gallery" class="nav__link nav__link_hover">Наши работы</a>
+			<a href="callback_form.html#contacts" target="_blank" class="nav__link nav__link_hover">Контакты</a>
+		</div>
+		<div class="wrapper">
+			<header class="burger">
+				<div class="burger__conteiner">
+					<div class="burger__body">
+						<div class="burger__cross">
+							<span></span>
+						</div>
+						<nav class="burger__menu">
+							<ul class="burger__list">
+								<li>
+									<a href="#main" class="nav__link nav__link_hover">Главная</a>
+								</li>
+								<li>
+									<a href="#We" class="nav__link nav__link_hover">О нас</a>
+								</li>
+								<li>
+									<a href="#services" class="nav__link nav__link_hover">Услуги</a>
+								</li>
+								<li>
+									<a href="#gallery" class="nav__link nav__link_hover">Наши работы</a>
+								</li>
+								<li>
+									<a href="callback_form.html#contacts" class="nav__link nav__link_hover"
+										target="_blank">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="about" id="We">
+			<div class="about__top">
+				<div class="about__title tit">
+					<h3 id="We">Студия</h3>
+				</div>
+				<div class="about__text text">
+					<p>Основная специализация&mdash; проектирование сайов и landing page.
+						Наша команда, состоящая из дизайнеров, маркетологов и программистов,
+						поддерживает каждый проект на протяжении всей его жизни. Студия
+						занимается разработкой индивидуального дизайна, оптимизацией
+						скорости работы продукта, предоставляет услуги по продвижению сайтов.</p>
+				</div>
+			</div>
+			<div class="about__bottom">
+				<div class="about__row">
+					<div class="about__column about__column_hover">
+						<div class="about-items__icon">
+							<i class="fas fa-rocket"></i>
+						</div>
+						<div class="about-items__title">
+							<h4>Старт</h4>
+						</div>
+						<div class="about-items__text">
+							<p>Вы хотите получать больше клиентов
+								и прибыли из интернета?С нуля разработаем
+								сайт любой сложности,учитывая индивидуальные
+								особенности вашего бизнеса. Стоимость создания
+								сайта в каждом конкретном случае индивидуальна
+								и рассчитывается исходя из пожеланий и
+								требований клиента.
+							</p>
+						</div>
+						<div class="about__price">
+							<a href="erorr.html" target="_blank" class="price">
+								<p class="cost">От 250р</p>
+								<div class="about__arrow">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhBAMAAABKCLRiAAAAAXNSR0IB2cksfwAAAB5QTFRFAAAA////////////////////////////////////JHyblQAAAAp0Uk5TAGDv//BQQN/gMK/i25MAAABVSURBVHicY2DAAYQU0QSUjQVQBZyNDVEFgo3RlDAaoysRHmxK0o1RgCFDMaqAEdCbKMCCIQNVwBPNUJMJaNYOgAJjdAWoXseIKGX0sHFGj+yQVigDAF7CIHioP3asAAAAAElFTkSuQmCC"
+										alt="Стрелка">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhBAMAAABKCLRiAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAASUExURUdwTPjGffnLifnIgfnJhfe5YC4IIdkAAAAFdFJOUwDDeK+WzILo5gAAAENJREFUKM9jYMABRAPRBEJDBdAF0JSYoithxFAiOtiUuIaigECGUDSAKYCmJQjdUAU0aweDgkD8EYURNhiRbRoMZQAA4Bwtkp/5fKgAAAAASUVORK5CYII="
+										alt="Стрелка">
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="about__column about__column_hover">
+						<div class="about-items__icon">
+							<i class="fas fa-mobile-alt"></i>
+						</div>
+						<div class="about-items__title">
+							<h4>Продвижение</h4>
+						</div>
+						<div class="about-items__text">
+							<p>Одним из важнейших этапов продвижения
+								сайта является поисковая оптимизация (SEO),
+								которая представляет собой комплекс мер по
+								повышению позиции сайта в поисковых
+								системах, и, таким образом, позволяет
+								увеличить его целевую посещаемость.
+							</p>
+						</div>
+						<div class="about__price">
+							<a href="erorr.html" target="_blank" class="price">
+								<p class="cost">От 500р</p>
+								<div class="about__arrow">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhBAMAAABKCLRiAAAAAXNSR0IB2cksfwAAAB5QTFRFAAAA////////////////////////////////////JHyblQAAAAp0Uk5TAGDv//BQQN/gMK/i25MAAABVSURBVHicY2DAAYQU0QSUjQVQBZyNDVEFgo3RlDAaoysRHmxK0o1RgCFDMaqAEdCbKMCCIQNVwBPNUJMJaNYOgAJjdAWoXseIKGX0sHFGj+yQVigDAF7CIHioP3asAAAAAElFTkSuQmCC"
+										alt="Стрелка">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhBAMAAABKCLRiAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAASUExURUdwTPjGffnLifnIgfnJhfe5YC4IIdkAAAAFdFJOUwDDeK+WzILo5gAAAENJREFUKM9jYMABRAPRBEJDBdAF0JSYoithxFAiOtiUuIaigECGUDSAKYCmJQjdUAU0aweDgkD8EYURNhiRbRoMZQAA4Bwtkp/5fKgAAAAASUVORK5CYII="
+										alt="Стрелка">
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="about__column about__column_hover">
+						<div class="about-items__icon">
+							<i class="fas fa-heartbeat"></i>
+						</div>
+						<div class="about-items__title">
+							<h4>Поддержка</h4>
+						</div>
+						<div class="about-items__text">
+							<p>У Вас уже работающий бизнес и Вы
+								регулярно нуждаетесь в услугах веб&ndash;студии
+								но брать сотрудника в штат и оборудовать
+								дополнительное рабочее место не выгодно?
+								Мы готовы взять эти проблемы на себя и
+								предоставлять нужные услуги удаленно.
+							</p>
+						</div>
+						<div class="about__price">
+							<a href="erorr.html" target="_blank" class="price">
+								<p class="cost">От 750р</p>
+								<div class="about__arrow">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhBAMAAABKCLRiAAAAAXNSR0IB2cksfwAAAB5QTFRFAAAA////////////////////////////////////JHyblQAAAAp0Uk5TAGDv//BQQN/gMK/i25MAAABVSURBVHicY2DAAYQU0QSUjQVQBZyNDVEFgo3RlDAaoysRHmxK0o1RgCFDMaqAEdCbKMCCIQNVwBPNUJMJaNYOgAJjdAWoXseIKGX0sHFGj+yQVigDAF7CIHioP3asAAAAAElFTkSuQmCC"
+										alt="Стрелка">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhBAMAAABKCLRiAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAASUExURUdwTPjGffnLifnIgfnJhfe5YC4IIdkAAAAFdFJOUwDDeK+WzILo5gAAAENJREFUKM9jYMABRAPRBEJDBdAF0JSYoithxFAiOtiUuIaigECGUDSAKYCmJQjdUAU0aweDgkD8EYURNhiRbRoMZQAA4Bwtkp/5fKgAAAAASUVORK5CYII="
+										alt="Стрелка">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="kredo">
+			<div class="kredo__body">
+				<div class="kredo__titile title">
+					<h1>кредо нашей компании</h1>
+				</div>
+				<div class="kredo__subtitle subtitle">
+					<p>Мы хотим, чтобы Ваш бизнес был еще успешней и прибыльней. В нашем понимании
+						качественный продукт &mdash; это достижение гармонии между эстетикой и
+						маркетинговыми целями. Высокий уровень контроля качества, опыт
+						работы и креативный подход к решению задач &mdash; залог
+						нашего успеха.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="development" id="services">
+			<div class="development__top">
+				<div class="development__row">
+					<div class="development__column1">
+						<div class="development-items__title">
+							<h5>landing page </h5>
+						</div>
+						<div class="development-items__price">
+							<a href="erorr.html" target="_blank">
+								<div class="development__cost1">
+									<p>от 1500 руб</p>
+								</div>
+								<div class="development__arrow1">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhBAMAAABKCLRiAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAASUExURUdwTDG+4UTE5DjA4j7C4wOv2vDR0HQAAAAFdFJOUwDDeK+WzILo5gAAAENJREFUKM9jYMABRAPRBEJDBdAF0JSYoithxFAiOtiUuIaigECGUDSAKYCmJQjdUAU0aweDgkD8EYURNhiRbRoMZQAA4Bwtkp/5fKgAAAAASUVORK5CYII="
+										alt="Голубая стрелка">
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="development__column2">
+						<div class="development-items__title">
+							<h5>веб&ndash;сайт</h5>
+						</div>
+						<div class="development-items__price">
+							<a href="erorr.html" target="_blank">
+								<div class="development__cost2">
+									<p>от 10000 руб</p>
+								</div>
+								<div class="development__arrow2">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhBAMAAABKCLRiAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAASUExURUdwTOK/MuXERePBOeTDP9ywBDbBs58AAAAFdFJOUwDDeK+WzILo5gAAAENJREFUKM9jYMABRAPRBEJDBdAF0JSYoithxFAiOtiUuIaigECGUDSAKYCmJQjdUAU0aweDgkD8EYURNhiRbRoMZQAA4Bwtkp/5fKgAAAAASUVORK5CYII="
+										alt="Оранжевая стрелка">
+								</div>
+							</a>
+						</div>
+					</div>
+					<div class="development__column3">
+						<div class="development-items__title">
+							<h5>интернет магазин</h5>
+						</div>
+						<div class="development-items__price">
+							<a href="erorr.html" target="_blank">
+								<div class="development__cost3">
+									<p>от 20000 руб</p>
+								</div>
+								<div class="development__arrow3">
+									<img
+										src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAhBAMAAABKCLRiAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAASUExURUdwTOK/MuXERePBOeTDP9ywBDbBs58AAAAFdFJOUwDDeK+WzILo5gAAAENJREFUKM9jYMABRAPRBEJDBdAF0JSYoithxFAiOtiUuIaigECGUDSAKYCmJQjdUAU0aweDgkD8EYURNhiRbRoMZQAA4Bwtkp/5fKgAAAAASUVORK5CYII="
+										alt="Салатовая стрелка">
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="development__bottom">
+				<div class="development__title tit">
+					<h3>первые в поиске</h3>
+				</div>
+				<div class="development__text text">
+					<p>Мы предлагаем услуги по SEO продвижению
+						сайтов в ведущих поисковых системах Yandex
+						и Google. Поисковое продвижение сайта в
+						нашей веб&ndash;студии&mdash; это гарантированное
+						присутствие на лидирующих позициях и
+						привлечение необходимой аудитории.
+					</p>
+				</div>
+				<div class="development__images">
+					<div class="development__icon1">
+						<img src="images/partner-min.png" alt="Google partner" title="Google partner">
+					</div>
+					<div class="development__icon2">
+						<img src="images/yandex-min.png" alt="Сертификат" title="Сертификат">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="projekt" id="gallery">
+			<div class="projekt__top">
+				<h2>последние проекты</h2>
+			</div>
+			<div class="projekt__gallery">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+							aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+						<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+							aria-label="Slide 4"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="images/книги-min.png" class="d-block w-100" alt="Сайт книжного магазина"
+								title="Сайт книжного магазина">
+						</div>
+						<div class="carousel-item">
+							<img src="images/салон-min.jpg" class="d-block w-100" alt="Сайт свадебного салона"
+								title="Сайт свадебного салона">
+						</div>
+						<div class="carousel-item">
+							<img src="images/охота-min.jpg" class="d-block w-100" alt="Сайт для охотнков"
+								title="Сайт для охотнков">
+						</div>
+						<div class="carousel-item">
+							<img src="images/батут-min.png" class="d-block w-100" alt="Сайт батутного центра"
+								title="Сайт батутного центра">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true">
+						</span>
+						<span class="visually-hidden">
+							Предыдущий
+						</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true">
+						</span>
+						<span class="visually-hidden">
+							Следующий
+						</span>
+					</button>
+				</div>
+			</div>
+			<div class="projekt__bottom">
+				<div class="projekt__more">
+					<a href="diplom_gallery.html" class="more" target="_blank">
+						посмотреть другие работы
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="adapt">
+			<div class="adapt__left">
+				<div class="adapt__title tit">
+					<h3>адаптивность</h3>
+				</div>
+				<div class="adapt__text text">
+					<p>Зачем ограничивать свой бизнес только пользователями стандартных компьютеров и ноутбуков? Ведь сегодня
+						все чаще люди заходят в интернет с мобильных гаджетов. Дайте им возможность купить именно у Вас,
+						обеспечив своему сайту правильное отображение на любом виде устройства.
+					</p>
+				</div>
+			</div>
+			<div class="adapt__right">
+				<div class="adapt__img">
+					<img src="images/iphone-min.png" alt="Телефон" title="Телефон">
+				</div>
+				<div class="adapt__img">
+					<img src="images/ipad-min.png" alt="Планшет" title="Планшет">
+				</div>
+				<div class="adapt__img">
+					<img src="images/macbook-min.png" alt="Ноутбук" title="Ноутбук">
+				</div>
+			</div>
+		</div>
+		<div class="trade">
+			<div class="trade__head title">
+				<h2>trade-in</h2>
+			</div>
+			<div class="trade__row">
+				<div class="trade__column">
+					<div class="trade__items">
+						<div class="trade__img">
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAAwCAMAAABwvEdpAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAJ8UExURUdwTAC55wC15gC65wC55wC25wC55wC55wC55wC55wC65wC55wC75gC55wC45gC86QC45wC55wC65wC56AC55wC55wDM/wD//wC56AC56AC55wC35wC55wC55wC55wC56AC55gC66AC94wC45wC55wC55gC55wC55gC56AC44wC26QC55wC45wC55wCq/wC56AC46AC45wC55wC45gC65wC56AC//wC65wCA/wC55gC56AC55wC55QC56AC45wC56AC22wC75gC45gC55wC56AC55wC45wC77gC56AC55wC25AC65gC46gC56AC75gC56AC55wC66wC45wC55wC55gC45wC55wC55wC56AC66gC66AC46QC55wC45wC55wC55wC65wC55wC55wC55wC65wC75gC45wC55wC56AC46wC55wC04QC65wC55gC35gC55wC65gC55gC55gC55gC55wC56AC56AC45wC55wC55wC65wC35wC85AC55wC55wCz5gC45wC55wC55gC65gC65wC55wC55wC55wC55wC56AC35wC55wC55wC65wC45wCx6wC76ACq1QC55gC55wC45wC55gC36QC56AC55wC45wC45wC65AC55wC75QC55wC55wC45wC65gC/3wC65wC45wC55gC55wC46AC55gC56AC/3wC56AC65gC25wC65wC55gC/5gC55gC55wC55wC55wC55wC55wC35QC55wC56AC56AC45wC45QC55wC55wC55gC55wC55gC55wC45wC55gC56AC16gC45gC56QC65QC65wC66AC45gC65wC56QC45gC55wC/6gC55wC55/tFFtYAAADTdFJOUwD5H3bmFYC109bV6Cn7UyJLyK2uycYFAZnv1EDyq9IWPk4b2f6w+DNtEiOdXssDr08rX5u/5AS0AsXP8B1XNlgHHl32bvp3D5jHHFEkhEdi7hq4zIds7Kq5JWRE/Vazlkrd83R9PMPpeRm2EZeGUqdnKFCRaZo3vL7Y4CAm15IKfvRmXIHn8ff1gzXRScqfDTgGuuWUWy54io2JMNwx4uNhNBA/gnt/WqXECAtGKp5xFHyVss117SfbY0LrMuHe0Lfa6kGcIRg9OjtVb3CpRWhUDMLgrdmvAAAD1klEQVRIx6WX91+TSRCHB6KEhEsIkBAhkQQCGAjJETh6r6FLb0qvnuUUCyqoYKGjFD1Or593er333nuff+jefVNI8la87y+zu+++z+fd2Z2ZfQFcMtRXx0QHMyQzyYNZZL1dAyxqqkZ2PcMxHpPMQqnimHxae5TjyWNMSNJTHHM76tI5nmQYGJQTIbhTNT7JoDx0DfWPSmll9Tqty7hG/ZTViFHPMykhGAw70SRG7WOjyCPp1j83B36iTPGL52P5KI/wUh7/F1EJUJKAePmBKUVjOHZLC0YT6k9lPiCluBUxxw7Qpsdzd/n9wknJrttA7HOAgzohCVMC3n0FZ5fYKNEwinPdlGdGEetfFdqjl3fl2lkp2iHpGkBPCGb0iN7wOGMci3ezgxSosXO/dUiSvofWkb4jVXuq0mWJJkvr036U/PcQLYe5IaEX2GIh73UvSibozuGgOZtnARfZQ+qst3evLKDJyOuGBHaKzDuONNiRz+/MCFw8oFI1GBtUOl2/yqmG/Qq514psn1+JBCHKAZKM3jwB9+95Bt9OlDGiUYBCQvQ6vtGVKPUESGCAm2LX4xfrwpRwLAD4DmcgomwamBSDpfOkVgwlDYpbBrRGfAn8KFqbzUZ6Nq0oSjcWaFsGXvClZJ46q662Ln+l1qxOpghTihzXOmEIJ8CX0kY2/JubfV8S+5wgRXUV7SXzPlWEUKzk7ZzSNDWxYYKU/svD8MdClz8lGvPaz+eVNeo/bM9DjSCFWvQKvgP+FFnFzzXlhYXm5NAS3cEwwfPyN6xf+Pg1JiXghlGh+n7zEhXRFWoRp64S/YoDTRlMjlGXYjmJe4Uabhh2c8ngoCh/Ns2GZzMp8rGhsl9zVy/RlDCw7OJWL+xF3cWDHwHbtxSuLeKn4KJk8VRmK0XpT2McKqd3k36IPw1uysM8FA10YCnTWTSl7EfpZyUiKXtJ3WSlfFuOZhBNieWgzK28VSyekspBqWjyZPj/QQkI9KY081CWRVOOHb0axKH6T6g44qIkJnmuvAq1qOztf7OksrdccbxWWZCW0qOsNYuIxtYJJaVjBUWlKUVKWrXHqUoSgxiP+vdz9ZTBnO0y/kSzz3Ww82QonRnILKL5XGu7s0UNBBMK4nD+1Lt0tnJDDrcwfGs6RFNcssQlf7B9D6eyFKVbqbEzxHr8sp9li9q8K2yQ7q/tOXL4mpjwMyMbxCa4KWYWigTgjqczOrJ03dNphpGM7XnPFropNRkMSFQd5S012zna/AVg+neJZGt4XCKpLPf6zTgT4fNHEy3P0pHh3d0SpyrHx7dcrd+64D/MvxjDjM2DAgAAAABJRU5ErkJggg=="
+								alt="Гаджеты">
+						</div>
+						<div class="trade__title">
+							<h4>программа</h4>
+						</div>
+					</div>
+					<div class="trade__text">
+						<p>Если Вы решили обновить свой сайт или
+							интернет&ndash;магазин, то программа трейд&ndash;ин
+							именно то, что Вам нужно.Благодаря
+							данной программе, Вы сможете приобрести
+							новый сайт с минимальными вложениями,
+							при этом утилизировав старый. Вам лишь
+							нужно связаться с нашим отделом трейд&ndash;ин
+							по телефону 8 (499) 390 6083, отправить
+							письмо на адрес www@trofimov.org, либо
+							разместить заявку на сайте.
+						</p>
+					</div>
+				</div>
+				<div class="trade__column">
+					<div class="trade__items">
+						<div class="trade__img">
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAAAwCAMAAAB9ojcuAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALrUExURUdwTAC55wC55wCq1ACy5QC55wC55wD//wC//wB//wC65QC55wC22wC55wC55wC55wC55wC45wC56AC65wC86QC75QCq/wC/3wC55gC55gC/3wC65AC55gC55wC55wC75gC56ADG4wC15gC55wC55wC56ADM/wC55wC66AC55QC55wC55wC45gC56AC55wC45gC16gC55wC55gC55wC55wC55wC77gC55gC56AC35wC45gC55wC65wCw6wC55wC85AC56AC55QC45wC55QC45wC56AC55wC55wC65wC55wC45wC45wC55wC55gC65gC55wC65gC26QC35gC55wC45gC55gC55gC56QC85AC45wC56AC56AC45wC55wC56AC55gC35QC55wC/6gC55wC56AC55wC55wC36QC55gC56AC55wC55wC25wC25AC56AC65wC65wC65QC45wC56AC55gC75QC55wC66AC45wC55wC55wC45gC55wC45wC35wC66gC65wC55wC55wC65wC66wC55wC45wC55wC55wC55wC55gC55wC27QC56AC46wC45gC56AC55gC65wC75QC65gC56AC56AC75gC45gC55wC55wC56AC55wC55wC45wC45wC65wC45wC45gC55wC55wC65gC04QC35wC46AC45gC55wC45wC55wC66AC46gC65wC94wC45gC76AC65wC56AC44wC55wC56AC55gC45wC55wC56AC66AC25wC56AC55wC65wC66AC65wC42wC45wC55QC65gC25QC65gCv3wC55wC45gC55wC56AC55wC55wC55wC76AC55gC65wC65wC65wC45gC44QC45wC55wC55wC55wC45wC46QC36QC45wC55wC65wC25gC55QC55wC46AC45gC56AC45wC65gC55gC55gC46AC/5QC56AC45wC45gC55wC55gC55gC55wC56QC65wC55gC551YYhRYAAAD4dFJOUwD+8wYK9PsBBAI7/AfSi9vJic/VFx4DEPqHCDC6vqhHIQkfdPE3BcFkHf3phRb5Uxj1cezw7Q8+uUBw8q0N0ROZUJQo9izo6lWrfoLXsH3vNCNSyEh80DomK64LjcLEkSfuDJVutdM55a/f+BUcQmupRlZjMzHLesdff2hMYTUljLLenhrUn81pVGbjDlcZe4+GdjxcpHkpPb33hNiKqrw/Xl2g52cRIE+brEvhbyTKG5At4I4SSVjFw9yDTipNzEpZgTLU4a0x1SDAsbejs6HWIqW0opdlK7jmtp1sLy5zdWBl2uRa7WLZcpzGRBR4NqaSu1uARb/a4ITQYgAABFtJREFUGBntwVN0nAkYBuB3+I8V27Zt2yiiIkmNtE2dIk5t27a5tm3b/C53ZoJm0D0507N3+zz433+MYRgYYhiMGHfjBpnbRkvoOtpTqPzsbQx6loN/kdE52T3QffKbZzBMcK70EC/wq8+lRdB66pkUPNyFHBbNG72LxDlJGNI0iU3p39v7EdGTjwPw3E5PPI2H4cj4F88fHO+xJd13IYMBJfHEk3lYTFva02kdYiMEsO0GjXbFQ2SU0cGdM++Au46kEgyQTckMtbX46SrQPpbCZlsC8I4Q5yXBuKuZ+Y57SgVAFKshqB1aaYmkFKScvb7fErB4iWq4AFzW7fCbBeM+LVLllQsBFJPvrokvj3X7MuZMRdzFny845ESNg1oKNZRAzUJBj3FhlJOc3QuNXuoX1mG/ghwjlYoSaKVF8IKEUJMF1mbAKHNHctjHAItV/M1vbanbU7sikIjOe/bGMtDyeSU91hNqTivSV8O4BWGUaDPBv5L2ugIInnuvpaKLfjkXGYl+zlm81UKoWU2k3WNgjODbLNLyisGgbvapKAy6Qu7V0LpEBc4wZvE3ZL8s3uH1OhGG3K4kGy76mS+na2OgtZYVXQ8jPppPiqWQuEZiOOWOdyesgsa0nVQ02xLAq/UcN2uHUTAUfIKab8GAcw6Fr69qsxg160XyTRUAYNYXJiwKqbWDAa4sMHwGgyGrqm2h1TSJR+znJqnE5JfsAzXhO6HC7pCzxTDgnckfm4QhHG+vbCG0zHMbD/Gsw0+VtXhCw0raAxuWfRr0ReXT82l4YFwqq2YqBjhnVyybMN0c/TzmiwTvkdIFeo56kZkIwzAp1nwPDGEYDGJaHUs+NBMfgJ6EzeQeBB0BZnTTBUbYqZYglG3WBF2CwhCxGwc6JP78RFcYSph5PMA2mpIDoMOyNJOSzaFnaQOd5kAfN7bMDoU8+hq6RpmR11bo475PESehJ1iZ/zti5ESyy9ARxGveB0Ou16ljDoZhBOUO0VcEU38jorjUaRhuzSYRAyNEcoqegwGSrdkLCxJt2pCxnBUe+x1NeaMawzEwbkEYSQ+7QGON/7wTqa23EjC7i+JmSALq+PyCuRgByRI5Za2sghq3uHyujwDFy/ooYpEtMDWPTdu3YQQEoteIGmeunX4EgG1bt2MjEUWIoGb1SRbNL8dIWIRKifhmL8QvnxitcCcq+7WP7OuhNu7wZJKWYiSEVTPGd1G/L1a2zDmyIIxG+0CNc7+D5JswMpEe+1tzN8R+4O0UAIAJZdNxc2icnEd9i4Qwga3/FLGNFTRiasjvYxeYICnZN85tDDTsCihuoRVM4BxPzUs8ocbkEVnvDoYJ7PZS/jEAVhV/3exk+44/BxPE3CVFFH70v+uN9mvEWgxTHJOT/Q9/KO6DuZNICjuY5IAfFTk4wbL0b1JNh4lOh1N8AoJuUOWfMJUkN4SlzJZT5SyY7vIlazGPVE54FD4riVROeDS3Hb3uMdD4BwwEcLcc2PACAAAAAElFTkSuQmCC"
+								alt="Лупа">
+						</div>
+						<div class="trade__title">
+							<h4>процесс работы</h4>
+						</div>
+					</div>
+					<div class="trade__text">
+						<p>Мы делаем предварительную оценку,
+							параллельно, с Вами согласовываем
+							веб интерфейс и систему управления,
+							и если Вас все устраивает, заключаем
+							договор. При этом Вам не придется
+							останавливать работу в интернете, так
+							как передача Вашего сайта осуществляется
+							только после разработки нового. Тем самым
+							Вы экономите не только время, но и деньги.
+						</p>
+					</div>
+				</div>
+				<div class="trade__column">
+					<div class="trade__items">
+						<div class="trade__img">
+							<img
+								src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAxCAMAAABdyV+IAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAI6UExURUdwTAC56AC75gC86QC55wC85AC55wC15gC55gC65wC46QC16gC55wC55wC65gC56AC55wC55wC55QC55wC55wC56QC65wC45wC55wC55wC55wCz5gC35wC65gC55wC25wCA/wC55gC55wC55wC55wC/3wC/3wC55wC65wC65wD//wC55wC56AC35gC55wC55wC45gC45gC55wC55wC55wC56AC56AC55wC55wC65wC65wC56AC55wC36QC45wC55wC66AC45wC25wC55wC55wC55wC75QC36QC55gC55gC65wC55wC56AC65AC55wC55wC55wC55wC75gC55gC55gC46gC55wC56AC56AC55wC25ACq/wC56AC26QC65wC55wDG4wC55wC55gC45wC55wC45wC55wC45wC55wC55gC56AC56AC55wC04QC55wC45wC94wC45wC44wC55wC45gC56AC55wC46wC27QC86QC45wC65QC55wC46AC55wC55wC55wC45wC66wC56AC45gC45wC55wC55wC55gC22wC45gC55gC55wC65wC45wC55gC65wC65wC55wC45wC56AC66AC55wC35wC55gC55wC//wC55wDM/wC55wC66AC45wC56AC55wC65wC66AC65wC55wCq1QC45QC55wC56AC55gC/6gC45wC45wC65wC56AC55gC77gC55wC45wC56AC56AC56AC45gC65gC55gC55wC66gC55wC5508r05gAAAC9dFJOUwAWRxfzE7UfpbREGOXjRuTigB3ntkWBgvvxfwpAcrcVAtrI/NcQCPZ9VQHpYlLmzJtl+P2dj6/u8mDgbtMuVml6dyroqJIxObtbv6t4MNig8PkpPigk/iFt3RwDjiPKqgnLus7Nw/o26rCkmvQR7XMb6xLbSDfcGQ4ibDtqT97C9Usag5B+SfdQB1Mzi5OJh9WX1EHvQ6w1kewE1gWnWZ95dKJkjL4GMsnP0AxhXqmYZg+KK66EuV1ce7MlleiffoMAAANPSURBVEjHpZblYxtHFMRHtSQ7thK7khNLNXMMcYyxw9BQ2zTM3CQNc8rMGCgzMzO3v/+tH/Zg73R2JHs+7c5783b23e3eST6+TFZPKwDJPwYUjZspFFsj9RsAzubiHsbasgBcGvW5eO4CsCtK/wxsH+Rce8LFRf11lE2j8J98MtHeC/BUvr62E9bM5TeL+ncjlD8B/GknHiCTgQfzCjTAx/qEoZ895tdWWCfVAd/5eTGo2Q1nm0L6XtgvzYFbXCY9Blcl6WHgOS+xHl7XNVgZ1FcAJdLBTRxwmPY+OGWG84E6N/MVjktqgzmBAnNhviQlib8jSXpvPbxhrcrtZrgZ9kq6H7L3WfplME2S9CncIEnaD2v9eA107pMkXYYVkrQQbvXjK+CxDrdFL0vSIbjDdngFLsQkqYeXDPMoPOSFF7jrSi30dUs/QPMXgT2Wwa6D0qtwzhAXhyDtBFfBsJu4HLbpR8icCT2mJHwtvQ8xh1gCi8xoC1R6edtg5/eQO5/3otwJJxJvc8gjboMnJWnPa4x+a+cNQdueiHd9HmS282bg0a02hTK/nCxz0P8uwOHfy/IwMg+AlRtcYu9XkOpQL1NCv9b0AMdPB9ix6OTTWXvWmgJYIlWkoCWRKHWQfhrWxUojkF78LItK087sfNMwcJdkKvRbzYpzOPrGWgiP+7MBvLenohKSfmR2+KA4eH6QR/zZTb7eePAr1GZpiyqw3DrrQX24wlvW6bWwkZ7x9KEKjdCSrx+AB9zxjWF9qA9l3vG30Ee8aXx90MMOaAjHu2D2eP4NSiwPDbAjFG4mW+uvPyOqyyWVUG2Gq+FkMFgOIxP4z+tDCzQGYkcgcT29VDLdrVAHq+zIMfhwYv/hPqyntdYKfO7cX7Mm1hsP1ZL0gt90SVvhREF6y0OKeLd9GW0uTO/34SdY6nK7zUegIL2/ixwZlxqGY1INMFMquMLf0GWIM/CN0c+QCq/QBJfM/DPYUoxeilXBP6qHcknqOMoRfVSof6fCdDillPk+LoN9HxSnN7sYmdXKi1J3joadxeqNh+ZB1kpLoRlnN0VVqALgXufvcaaKRmMVQP1imMz6nocF90xa7+1i0np3F5PXOx6moJdinVPTS3d3XSfhfxMLBvs5T2J+AAAAAElFTkSuQmCC"
+								alt="Алмаз ">
+						</div>
+						<div class="trade__title">
+							<h4>условия</h4>
+						</div>
+					</div>
+					<div class="trade__text">
+						<p>Вам нужно предоставить максимум информации
+							о предоставляемом интернет&ndash;проекте, которое
+							Вы хотите обновить.Данная информация
+							поможет нам в кратчайшие сроки рассмотреть
+							Ваш запрос и дать положительный ответ. Для
+							этого, убедительно просим Вас, присылать
+							информацию на Вашем фирменном бланке с
+							печатью, а так же фотографии домена и
+							хостинга.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="trade__foot">
+				<button type="button" class="mysait" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					Оцените Наш сайт
+				</button>
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Ваш голос важен для Нас</h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+								</button>
+							</div>
+							<div class="modal-body">
+								<div class="rating-area">
+									<input type="radio" id="star-5" name="rating" value="5">
+									<label for="star-5" title="Оценка «5»">
+									</label>
+									<input type="radio" id="star-4" name="rating" value="4">
+									<label for="star-4" title="Оценка «4»">
+									</label>
+									<input type="radio" id="star-3" name="rating" value="3">
+									<label for="star-3" title="Оценка «3»">
+									</label>
+									<input type="radio" id="star-2" name="rating" value="2">
+									<label for="star-2" title="Оценка «2»">
+									</label>
+									<input type="radio" id="star-1" name="rating" value="1">
+									<label for="star-1" title="Оценка «1»">
+									</label>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Оценить позже
+								</button>
+								<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Оценить
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="care">
+			<div class="care__content">
+				<div class="care__title ">
+					<h3>забота о каждом</h3>
+				</div>
+				<div class="care__text text">
+					<p>Рожденный в нашей студии проект обречен
+						на пожизненную поддержку. Мы обучим вас
+						ведению сайта, обновим контент и настроим
+						продвижение в любой момент. Каждая деталь
+						вашего бизнеса является состовляющим звеном
+						нашей студии. И мы позаботимся о вас.
+					</p>
+				</div>
+				<div class="care__img">
+					<img src="images/Слой_7-min.png" alt="Макет сайта" title="Макет сайта">
+				</div>
+			</div>
+			<div class="up">
+				<a href="index.html#top" class="above">Наверх
+					<i class="fas fa-angle-double-up"></i>
+				</a>
+			</div>
+		</div>
+		<div class="bottom">
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+		integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+		crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="burg.js"></script>
+</body>
+
+</html>

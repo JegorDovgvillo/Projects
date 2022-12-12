@@ -1,0 +1,67 @@
+
+{{#if englishVersion}}
+<form class="check">
+    <h2 class='check__header'>Tip calculator</h2>
+    <label>
+        <h3 class='check__currency-header'>Check amount</h3>
+        <select class="check__currency">
+            <option value="USD">USD </option>
+            <option value="EUR">EUR</option>
+            <option value="RUB">RUB</option>
+            <option value="BYN">BYN</option>
+        </select>
+        <input class="check__amount" data-user-input-help-check="Check amount no more than: 10000"
+            data-user-input-help-check-rub="Check amount no more than: 100000" type="text">
+    </label>
+    <label>
+        <h3 class='check__persons-header'>Number of persons</h3>
+        <input class="check__persons" data-user-input-help-persons="No more than 100 people" type="text">
+    </label>
+    <label>
+        <h3 class='check__level-header'>Service level</h3>
+        <select class="check__level" type="text">
+            <option value="choose" disabled selected>Choose...</option>
+            <option value="0.25">Excellent-25%</option>
+            <option value="0.20">Good-20%</option>
+            <option value="0.15">Regular-15%</option>
+            <option value="0.10">Bad-10%</option>
+            <option value="0.05">Terrible-5%</option>
+        </select>
+    </label><br>
+    <input class="check__calculation" type="button" value="Calculate">
+</form>
+<div class="modal-window"></div>
+{{/if}}
+{{#if russianVersion}}
+<form class="check">
+    <h2 class='check__header'>Калькулятор чаевыx</h2>
+    <label>
+        <h3 class='check__currency-header'>Сумма чека</h3>
+        <select class="check__currency">
+            <option value="USD">USD </option>
+            <option value="EUR">EUR</option>
+            <option value="RUB">RUB</option>
+            <option value="BYN">BYN</option>
+        </select>
+        <input class="check__amount" data-user-input-help-check="Сумма чека не более: 10000"
+            data-user-input-help-check-rub="Сумма чека не более: 100000" type="text">
+    </label>
+    <label>
+        <h3 class='check__persons-header'>Количество человек</h3>
+        <input class="check__persons" data-user-input-help-persons="Не более: 100 человек" type="text">
+    </label>
+    <label>
+        <h3 class='check__level-header'>Уровень обслуживания</h3>
+        <select class="check__level" type="text">
+            <option value="choose" disabled selected>Выбрать...</option>
+            <option value="0.25">Превосходный-25%</option>
+            <option value="0.20">Хороший-20%</option>
+            <option value="0.15">Обычный-15%</option>
+            <option value="0.10">Плохой-10%</option>
+            <option value="0.05">Ужасный-5%</option>
+        </select>
+    </label><br>
+    <input class="check__calculation" type="button" value="Расчитать">
+</form>
+<div class="modal-window"></div>
+{{/if}}

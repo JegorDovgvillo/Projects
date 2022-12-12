@@ -1,0 +1,35 @@
+
+.trash {
+    border: solid red 1px;
+    padding: 1px 8px;
+    border-radius: 4px;
+    color: red;
+    background-color: white;
+}
+.impButton {
+    border: solid green 1px;
+    margin-left: 5px;
+    padding: 1px 10px;
+    border-radius: 4px;
+    color: green;
+    background-color: white;
+}
+.todo-list-item {
+    display: flex;
+    justify-content: space-between;
+}
+.trash:hover {
+    background-color: red;
+    color: white;
+}
+.impButton:hover {
+    background-color: green;
+    color: white;
+}
+.todo-list-item.important .todo-list-item-label{
+    color:steelblue;
+    font-weight: bold;
+}
+.todo-list-item.done {
+    text-decoration: line-through;
+}

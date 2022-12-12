@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset-style.css">
+	<link rel="stylesheet" type="text/css" href="callback_form.css">
+	<link rel="stylesheet" type="text/css" href="navigation.css">
+	<link rel="stylesheet" type="text/css" href="adaptate.css">
+	<link rel="icon" href="images/favicon-32x32-min.png" type="image/x-icon">
+	<title>Feedback</title>
+</head>
+
+<body>
+	<div class="width-limit">
+		<div class="nav">
+			<a href="index.html#main" class="nav__link nav__link_hover" target="_blank">Главная</a>
+			<a href="index.html#We" class="nav__link nav__link_hover" target="_blank">О нас</a>
+			<a href="index.html#services" class="nav__link nav__link_hover" target="_blank">Услуги</a>
+			<a href="index.html#gallery" class="nav__link nav__link_hover" target="_blank">Наши работы</a>
+			<a href="#contacts" class="nav__link nav__link_hover">Контакты</a>
+		</div>
+		<div class="wrapper">
+			<header class="burger">
+				<div class="burger__conteiner">
+					<div class="burger__body">
+						<div class="burger__cross">
+							<span></span>
+						</div>
+						<nav class="burger__menu">
+							<ul class="burger__list">
+								<li>
+									<a href="index.html#main" target="_blank" class="nav__link nav__link_hover">Главная</a>
+								</li>
+								<li>
+									<a href="index.html#We" target="_blank" class="nav__link nav__link_hover">О нас</a>
+								</li>
+								<li>
+									<a href="index.html#services" target="_blank" class="nav__link nav__link_hover">Услуги</a>
+								</li>
+								<li>
+									<a href="index.html#gallery" target="_blank" class="nav__link nav__link_hover">Наши
+										работы</a>
+								</li>
+								<li>
+									<a href="#contacts" class="nav__link nav__link_hover" id="contacts">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+		</div>
+		<div class="callback">
+			<div class="callback__body">
+				<div class="callback__left">
+					<div class="callback__title">
+						<h3>свяжитесь с нами</h3>
+					</div>
+					<div class="callback__text">
+						<p>Готовы начать работу? Отправьте
+							сообщение и свои контакты, мы
+							ответим вам в течении 2&ndash;ух дней.
+							Схема работы с каждым клиентом
+							будет разработана индивидуально
+							в зависимости от поставленных задач.
+						</p>
+					</div>
+				</div>
+				<div class="callback__right">
+					<form class="call" method="get" action="https://fe.it-academy.by/TestForm.php" name="call">
+						<input class="username" type="text" name="username" placeholder="Ваше имя"
+							pattern="[A-ZА-ЯЁё][a-zа-яё]{1,}" required autocomplete="off">
+						<input class="surname" type="text" name="surname" placeholder="Ваша фамилия"
+							pattern="[A-ZА-ЯЁё][a-zа-яЁё]{1,}" required autocomplete="off">
+						<input class="eladres" type="email" name="email" placeholder="E-mail"
+							pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required autocomplete="off">
+						<textarea placeholder="Введите ваше сообщение"></textarea>
+						<div class="callback__underform">
+							<div class="callback__afterform">
+								<p>Наши специалисты свяжутся с вами как можно скорее</p>
+							</div>
+							<button class="underform" type="submit">
+								Отправить
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="burg.js"></script>
+</body>
+
+</html>

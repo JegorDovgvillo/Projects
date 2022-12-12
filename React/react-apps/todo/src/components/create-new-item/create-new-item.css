@@ -1,0 +1,12 @@
+
+.addButton {
+    border: solid 1px gray;
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+.form-control {
+    margin-right: 3px;
+}
+form {
+    display: flex;
+}

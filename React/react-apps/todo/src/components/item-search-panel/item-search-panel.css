@@ -1,0 +1,19 @@
+
+.all {
+    padding: 1px 9px;
+    margin-right: 3px;
+    border:solid 1px lightgray;
+    border-radius: 5px;
+}
+.active {
+    background-color: rgb(97, 97, 255);
+    color: white;
+}
+.unactive {
+    background-color: white;
+    color: black;
+}
+button:hover {
+    background-color: gray;
+    color: white;
+}

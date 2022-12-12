@@ -1,0 +1,23 @@
+
+{{#if englishVersion}}
+<header class="header">
+    <a class="header__link {{#ifCond page '===' ''}}active{{/ifCond}}" href="#/">
+        About Us
+    </a>
+    <a class="header__link {{#ifCond page '===' 'main'}}active{{/ifCond}}" href="#/main">
+        Calculator
+    </a>
+    <input class="translate" value='EN' type="button" data-lang='en'>
+</header>
+{{/if}}
+{{#if russianVersion}}
+<header class="header">
+    <a class="header__link {{#ifCond page '===' ''}}active{{/ifCond}}" href="#/">
+        О Нас
+    </a>
+    <a class="header__link {{#ifCond page '===' 'main'}}active{{/ifCond}}" href="#/main">
+        Калькулятор
+    </a>
+    <input class="translate" value='RU' type="button" data-lang='ru'>
+</header>
+{{/if}}
